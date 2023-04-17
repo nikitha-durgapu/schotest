@@ -1,0 +1,44 @@
+.main {
+    background: url(https://schotest.com/assets/images/website/events-header.png) no-repeat 100%;
+    background-size: cover;
+}
+.main img{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.main h3{
+    display: inline-block;
+    color: white;
+    font-size: 36px;
+    margin-left: 200px;
+}
+.main a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 350px;
+    padding-bottom: 20px;
+}
+.main i{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+}
+.main span{
+text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+}
+.about-content p{
+    margin: 3% auto;
+    background-color: white;
+    color: black;
+    width: 75%;
+    padding: 5%;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

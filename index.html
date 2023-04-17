@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Schotest Public School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div id="overlay" onclick="off()"></div>
+    <nav class="top-nav">
+        <div class="nav-main-icon max-width">
+            <a href="#home" title="School Information">
+                <i class="fa fa-university" aria-hidden="true"></i>
+            </a>
+            <a href="about.html" title="School Information">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <a href="#blogs" title="Blogs">
+                <i class="fa fa-rss-square" aria-hidden="true"></i>
+            </a>
+            <a href="#notifications" title="Notifications">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+            </a>
+            <a href="#events" title="Events">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+            </a>
+            <a href="#gallery" title="School Information">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+            <a href="#contact-us" title="Contact Us">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <div class="menu-btn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="nav-main max-width">
+            <div class="nav-list">
+                <a href="#home">Home</a>
+                <a href="about.html">About us</a>
+                <a href="#schoolfeatures">Schoolfeatures</a>
+                <a href="#basicparameters">Basicparameters</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#notifications">Notifications</a>
+                <a href="#events">Events</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact-us">Contact us</a>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn">Mandatory Disclosure
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="https://schotest.com/assets/uploads/cbse_links/6340514bc12b6.pdf" target="_blank
+                          ">Society Registration</a>
+                    <a href="https://schotest.com/assets/uploads/cbse_links/6340516c0672e.pdf" target="_blank
+                          ">No Objection Certification</a>
+                </div>
+            </div>
+            <div class="log" onclick="openLogin()">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <span >Login</span>
+            </div>
+            <div class="sign">
+                <a><i class="fa fa-list" aria-hidden="true"></i></a>
+                <a href="#sign-up">Sign up</a>
+            </div>
+        </div>
+    </nav>
+    <div class="loginmain" id="loginmain">
+        <i class="fa fa-times" onclick="closeLogin()"  aria-hidden="true"></i>
+        <img style="width: 100px;" src="https://schotest.com/assets/images/website/logo-circle.png" alt="logo modal" />
+        <h2>Log In</h2>
+        <form action="" method="post">
+            <input type="text" placeholder="User Name*"> <br>
+            <input type="password" placeholder="Password*"><br>
+            <input list="log-in-for" name="log-in-for" id="loginfor" placeholder="Select Login For*">
+            <datalist id="log-in-for">
+                <option value="loginfor"></option>
+                <option value="Student"></option>
+                <option value="Teacher"></option>
+            </datalist><br>
+            <button>Log In</button><br>
+            <span>or</span><br>
+            <input type="checkbox" name="remember" id="remember"> <label for="remember">Remember Me</label>
+            <a href="#">Forget Password?</a><br>
+            <span>I don't have an account <a href="#signup">Sign Up</a>
+            </span>
+        </form>
+    </div>
+    <section class="info" id="info">
+        <img src="https://schotest.com/assets/images/website/logo-circle.png" alt="logo modal" />
+        <h1>Schotest Public School</h1>
+        <p>North West Delhi(Delhi)</p>
+        <hr>
+    </section>
+    <section id="home">
+        <div class="max-width">
+            <div class="home">
+                <a href="tel:9315514145" title="Phone" class="home-icon telp">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:info@schotest.com" title="E-Mail" class="home-icon email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://goo.gl/maps/En8HDqT6PVVPm3Tu8" title="Get Directions"
+                    class="home-icon loca">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                </a>
+                <span class="br1"><br></span>
+                <a href="" class="home-ref">Admission</a>
+                <span class="br2"><br></span>
+                <a href="" class="home-ref">Prospectus</a>
+            </div>
+        </div>
+    </section>
+    <section class="notificationevents">
+        <div class="max-width">
+            <div class="notifyevents">
+                <div class="coloum col-left">
+                    <div class="notifications" id="notifications">
+                        <h3>NOTIFICATIONS</h3>
+                        <hr>
+                        <a href="notify-detail-1.html">
+                            <div class="notify-content">
+                                <div class="notify-img">
+                                    <img src="https://schotest.com/assets/uploads/school_notifications/5f58dd3698c59.jpg"
+                                        alt="Board Exams to be made easy with 2 attempts in a year">
+                                </div>
+                                <div class="notify-details">
+                                    <h6>Board Exams To Be Made Easy With 2 Attempts In A Year</h6>
+                                    <div class="date-details">
+                                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        <span>Aug 12, 2020 20:38 pm</span>
+                                    </div>
+                                    <div>
+                                        HRD ministry has said that NCERT will be developing guidelines for transforming
+                                        school
+                                        assessment to </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="notify-detail-2.html">
+                            <div class="notify-content">
+                                <div class="notify-img">
+                                    <img src="https://schotest.com/assets/uploads/school_notifications/5f58dea60f979.jpg"
+                                        alt="Delhi Government launches EY STEM Tribe app to uplift girls in STEM careers">
+                                </div>
+                                <div class="notify-details">
+                                    <h6>Delhi Government Launches EY STEM Tribe App To Uplift Girls In STEM Careers</h6>
+                                    <div class="date-details">
+                                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        <span>Aug 12, 2020 21:29 pm</span>
+                                    </div>
+                                    <div>
+                                        To boost the girls’ involvement in the STEM (Science, Technology, Engineering
+                                        and
+                                        Mathematics) ca </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="notify-detail-3.html">
+                            <div class="notify-content">
+                                <div class="notify-img">
+                                    <img src="https://schotest.com/assets/uploads/school_notifications/63280b914b825.jpg"
+                                        alt="Education">
+                                </div>
+                                <div class="notify-details">
+                                    <h6>Education</h6>
+                                    <div class="date-details">
+                                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        <span>Sep 19, 2022 11:56 am</span>
+                                    </div>
+                                    <div>
+                                        It helps people become better citizens, get a better-paid job, shows the
+                                        difference
+                                        between good and </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="notify-detail-4.html">
+                            <div class="notify-content">
+                                <div class="notify-img">
+                                    <img src="https://schotest.com/assets/uploads/school_notifications/63280c3004b42.jpg"
+                                        alt="Personality developmant">
+                                </div>
+                                <div class="notify-details">
+                                    <h6>Personality Developmant</h6>
+                                    <div class="date-details">
+                                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        <span>Sep 19, 2022 11:59 am</span>
+                                    </div>
+                                    <div>
+                                        It helps gain confidence, self-esteem, positive impact on one's communication
+                                        skills and
+                                        the way one </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="#" class="mrebtn">MORE</a>
+                </div>
+                <div class="coloum col-right">
+                    <div class="events" id="events">
+                        <h3>EVENTS</h3>
+                        <hr>
+                        <div class="event-content">
+                            <div class="img-details">
+                                <div class="event-img">
+                                    <img src="https://schotest.com/assets/uploads/school_events/5f59bd5d09293.jpg"
+                                        alt="Second Anniversary Of SchoTest" />
+                                </div>
+                                <div class="time-details">
+                                    <div class="date-details">
+                                        <span class="date">05</span>
+                                        <span class="month">Aug</span>
+                                    </div>
+                                    <span class="time">
+                                        12:00:PM - 12:00:PM </span>
+                                </div>
+                            </div>
+                            <div class="event-details">
+                                <h6>
+                                    <a href="https://schooldemo.schotest.com/event-info/11">Second Anniversary Of
+                                        SchoTest</a>
+                                </h6>
+                                <p class="event-content-details">
+                                    Congratulations to you on this very big occasion of successfully completing
+                                    two years of
+                                    remarkabl </p>
+                            </div>
+                        </div>
+
+                        <div class="event-content">
+                            <div class="img-details">
+                                <div class="event-img">
+                                    <img src="https://schotest.com/assets/uploads/school_events/5f59bde711d62.jpg"
+                                        alt="SchoTest at the National Water Mission Award Ceremony" />
+                                </div>
+                                <div class="time-details">
+                                    <div class="date-details">
+                                        <span class="date">25</span>
+                                        <span class="month">Sep</span>
+                                    </div>
+                                    <span class="time">
+                                        12:00:PM - 02:15:PM </span>
+                                </div>
+                            </div>
+                            <div class="event-details">
+                                <h6>
+                                    <a href="https://schooldemo.schotest.com/event-info/12">SchoTest At The National
+                                        Water
+                                        Mission Award Ceremony</a>
+                                </h6>
+                                <p class="event-content-details">
+                                    We cannot explain its taste, but we need it every now and then. We cannot describe
+                                    its
+                                    colour, altho </p>
+                            </div>
+                        </div>
+                        <a href="#" class="mrebtn">MORE</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="found-links">
+        <div class="max-width">
+            <div class="found-link">
+                <div class="founder">
+                    <h5>Principal Message</h5>
+                    <hr>
+                    <div class="found">
+                    <div class="founder-img">
+                        <img src="https://schotest.com/assets/uploads/schools/5f87d8b0ae560.png"
+                            alt="principle profile image">
+                    </div>
+                    <div class="founder-desc">
+                        <div class="founder-details">
+                            <p >
+                                "It is easier to build strong children than to repair broken men". A wise quote
+                                referring to the role that children could play in laying the foundation of a strong
+                                nation. I believe that the foundation of a strong nation depends on the way its children
+                                are cared for and nurtured. In order to build a strong nation, we must instill good
+                                values in our children providing them love and care, guiding them through thick and thin
+                                till they become confident and strong enough. This all can be done through “Quality
+                                education”.</p>
+                        </div>
+                        <p>
+                        <i> - Kamal Dixit </i></p>
+                    </div>
+                </div>
+                </div>
+                <div class="soc-links" >
+                    <h1>Social Links</h1>
+                    <div class="icon-container">
+                        <div class="icon-row">
+                            <div class="icon-col">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            </div>
+                            <div class="icon-col">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon-col">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="icon-row">
+                            <div class="icon-col">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon-col">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="icon-col">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shr-btn" onclick="openPopup()">
+                        <span>SHARE</span>
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="soc-linkspop" id="soc-linkspop">
+                <h1>SHARE ON</h1>
+                <hr>
+                <div class="icon-containerpop">
+                    <div class="icon-row">
+                        <div class="icon-col">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        </div>
+                        <div class="icon-col">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="icon-col">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="icon-row">
+                        <div class="icon-col">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="icon-col">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="icon-col">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/" target="blank" >
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shr-btn" onclick="closePopup()">
+                    <span>Close</span>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+            </div>
+    </section>
+    <section id="blogs">
+        <div class="blogs">
+            <div class="blog-title">
+                <h1>CONTRIBUTION TOWARDS SOCIETY</h1>
+                <hr>
+            </div>
+            <div class="blog-info">
+                <div class="blog-row">
+                    <div class="blog-main blog-col">
+                        <a href="blog-detail-1.html">
+                            <div class="blog-content">
+                                <div class="blog-img">
+                                    <img src="https://schotest.com/assets/uploads/school_blogs/5f59bb8a748c6.jpg"
+                                        alt="Manodarpan - The psychological mirror">
+                                </div>
+                                <div class="blog-details">
+                                    <h6>Manodarpan - The psychological mirror</h6>
+                                    <div class="date-details">
+                                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        <span>2020-09-10 11:07:14</span>
+                                    </div>
+                                    <div>
+                                        Mental Health has been quite an area of discussion these days . While it has gre...
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-main blog-col">
+                        <a class="blog-main" href="blog-detail-2.html">
+                            <div class="blog-content">
+                                <div class="blog-img">
+                                    <img src="https://schotest.com/assets/uploads/school_blogs/5f59bc51ef428.jpg"
+                                        alt="The New Education Policy 2020 is set to be a landmark in India’s history of education">
+                                </div>
+                                <div class="blog-details">
+                                    <h6>The New Education Policy 2020 is set to be a landmark in India’s history of
+                                        education</h6>
+                                    <div class="date-details">
+                                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        <span>2020-09-10 11:10:33</span>
+                                    </div>
+                                    <div>
+                                        The Government of India has renovated the current National Policy on Education, ...
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-row">
+                    <div class="blog-main blog-col">
+                        <a class="blog-main" href="blog-detail-3.html">
+                            <div class="blog-content">
+                                <div class="blog-img">
+                                    <img src="https://schotest.com/assets/uploads/school_blogs/5f59bcb6e42e1.jpg"
+                                        alt="Education Reforms Due To Coronavirus">
+                                </div>
+                                <div class="blog-details">
+                                    <h6>Education Reforms Due To Coronavirus</h6>
+                                    <div class="date-details">
+                                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        <span>2020-09-10 11:12:14</span>
+                                    </div>
+                                    <div>
+                                        The outbreak of the coronavirus pandemic has created immediate and unprecedented...
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-main blog-col">
+                        <a class="blog-main" href="blog-detail-4.html">
+                            <div class="blog-content">
+                                <div class="blog-img">
+                                    <img src="https://schotest.com/assets/uploads/school_blogs/63280c9e731da.jpg"
+                                        alt="Indian Development">
+                                </div>
+                                <div class="blog-details">
+                                    <h6>Indian Development</h6>
+                                    <div class="date-details">
+                                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        <span>2022-09-19 12:00:54</span>
+                                    </div>
+                                    <div>
+                                        Indian Development... </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="gallery">
+        <div class="gallery-info">
+            <h1>Gallery</h1>
+            <hr>
+        </div>
+        <div class="gallery-grid">
+            <div class="main-grid">
+                <div class="big-image">
+                    <a href="https://schooldemo.schotest.com/gallery">
+                        <img src="https://schotest.com/assets/images/website/gallery/12.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="small-image">
+                    <a href="https://schooldemo.schotest.com/gallery">
+                        <img src="https://schotest.com/assets/images/website/gallery/12.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="small-image">
+                    <a href="https://schooldemo.schotest.com/gallery">
+                        <img src="https://schotest.com/assets/images/website/gallery/2.jpg" alt="image">
+                    </a>
+                </div>
+            </div>
+            <div class="secondary-grid">
+                <div class="image-row">
+                    <div class="small-image">
+                        <a href="https://schooldemo.schotest.com/gallery">
+                            <img class="small-image" src="https://schotest.com/assets/images/website/gallery/3.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="small-image">
+                        <a href="https://schooldemo.schotest.com/gallery">
+                            <img class="small-image" src="https://schotest.com/assets/images/website/gallery/4.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="small-image">
+                        <a href="https://schooldemo.schotest.com/gallery">
+                            <img class="small-image" src="https://schotest.com/assets/images/website/gallery/5.jpg" alt="image">
+                        </a>
+                    </div>
+                </div>
+                <div class="image-row">
+                    <div class="small-image">
+                        <a href="https://schooldemo.schotest.com/gallery">
+                            <img class="small-image" src="https://schotest.com/assets/images/website/gallery/6.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="small-image">
+                        <a href="https://schooldemo.schotest.com/gallery">
+                            <img class="small-image" src="https://schotest.com/assets/images/website/gallery/7.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="small-image">
+                        <a href="https://schooldemo.schotest.com/gallery">
+                            <img class="small-image" src="https://schotest.com/assets/images/website/gallery/8.jpg" alt="image">
+                        </a>
+                    </div>
+                </div>
+                <div class="image-row">
+                    <div class="small-image">
+                        <a href="https://schooldemo.schotest.com/gallery">
+                            <img class="small-image" src="https://schotest.com/assets/images/website/gallery/9.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="small-image">
+                        <a href="https://schooldemo.schotest.com/gallery">
+                            <img class="small-image" src="https://schotest.com/assets/images/website/gallery/10.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="small-image">
+                        <a href="https://schooldemo.schotest.com/gallery">
+                            <img class="small-image" src="https://schotest.com/assets/images/website/gallery/11.jpg" alt="image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer max-width" id="foot">
+            <div class="footer-contact ">
+                <div class="foot-address">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <h3>Address</h3>
+                    <a href="https://goo.gl/maps/5d4SifsjuEv3A1yK6">Plot No: 431 First floor, Kakrola Housing Complex,
+                        Opp Pillar No: 794,
+                        , Near Dwarka More Metro Station, Delhi 110078.</a>
+                </div>
+                <div class="foot-phone">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h3>Phone</h3>
+                    <a href="tel:9315514145">9315514145</a>
+                </div>
+                <div class="foot-mail">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <h3>Mail</h3>
+                    <span>Email:</span>
+                    <a class="text-white" href="mailto:info@schotest.com">info@schotest.com</a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="foot-about">
+                    <h3>About Us</h3>
+                    <hr>
+                    <p>SchoTest: An initiative of S.J.J. Solutions Pvt. Ltd. is here to fulfill its social
+                        responsibility towards the society. We dream to revolutionize the educational system of this era
+                        by unleashing the creative potential of the students and help them advance in the educational
+                        realm.</p>
+                </div>
+                <div class="foot-quick-links">
+                    <h3>Quick Links</h3>
+                    <hr>
+                    <ul type="none">
+                        <li>
+                            <a href="index.html#home">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>Gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>Student Registration
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>Teacher Registration
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot-news">
+                    <h3>News Letter</h3>
+                    <hr>
+                </div>
+                <div class="foot-social-links">
+                    <h3>Social Links</h3>
+                    <hr>
+                    <div class="foot-icon-container">
+                        <div class="foot-icon" id="foot-facebook">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/"
+                                target="blank">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="foot-icon" id="foot-pinterest">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/"
+                                target="blank">
+                                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="foot-icon" id="foot-linkedin">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/"
+                                target="blank">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="foot-icon" id="foot-instagram">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/"
+                                target="blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="foot-icon" id="foot-youtube">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/"
+                                target="blank">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="foot-icon" id="foot-twitter">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://schooldemo.schotest.com/"
+                                target="blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-copyright">
+                <p>&copy; 2019 SchoTest All Rights Reserved. Designed and Developed by
+                    <a href="http://sjjs.in">
+                        S.J.J.S Pvt. Ltd.
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
